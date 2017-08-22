@@ -1,0 +1,9 @@
+enableSaving [false, false];
+enableEnvironment [false, true];
+enableSentences false;
+call CLib_fnc_loadModules;
+if !(isServer) then {
+	null = [] execVM "diary.sqf";					//Diary
+};
+enableEnvironment [false, true];
+//[false, true] call acre_api_fnc_setupMission;
